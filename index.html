@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI in Daily Life</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+html { scroll-behavior: smooth; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+}
+
+nav h2 { color: #0ea5e9; }
+
+nav ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0f172a;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #0ea5e9; }
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(120,120,120,0.5), rgba(200,200,200,0.75)),
+                url("ui.png") center/cover;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 10px 0;
+    color: #475569;
+}
+
+.hero button {
+    padding: 12px 28px;
+    border: none;
+    background: #0ea5e9;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.hero button:hover {
+    background: #0284c7;
+    transform: scale(1.10);
+}
+
+/* SECTION */
+.section {
+    padding: 95px 40px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background: #f1f5f9;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.6;
+    color: #475569;
+}
+
+/* SPLIT */
+.split {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.split img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* FEATURES */
+.features-list {
+    text-align: left;
+    max-width: 420px;
+}
+
+.features-list li {
+    margin: 10px 0;
+}
+
+/* CARDS (ONLY LAST SECTION) */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    width: 240px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+/* HOVER EFFECT (only here) */
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card p {
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.card:hover p {
+    color: #0ea5e9;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    margin-top: 20px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h2>AI World</h2>
+    <ul>
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#about">Understanding AI</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#applications">Applications</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <h1 style="color: #0f172a;" >AI in Daily Life</h1>
+        <p style="color: #0f172a;"><b>Enhancing everyday experiences through intelligent technology.</b></p>
+        <a href="#about"><button>Explore</button></a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>Understanding AI</h2>
+
+    <div class="split">
+        <img src="ai.png">
+
+        <div>
+            <p>
+            Artificial Intelligence (AI) refers to systems that can perform tasks
+            requiring human intelligence. It is widely used in modern technology
+            to simplify processes and improve efficiency.
+            </p>
+
+            <p>
+            From smartphones to smart homes, AI plays an essential role in making
+            life more convenient and productive.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+    <h2>Key Features</h2>
+
+    <div class="split">
+
+        <div class="features-list">
+            <p>
+            AI enhances user experience by automating tasks, analyzing data,
+            and improving accuracy in decision-making.
+            </p>
+
+            <ul>
+                <li>✔ Smart Assistants for instant help</li>
+                <li>✔ Automation of repetitive tasks</li>
+                <li>✔ Predictive analysis for better decisions</li>
+                <li>✔ Enhanced security and protection</li>
+            </ul>
+        </div>
+
+        <img src="assistant.png">
+    </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section class="section" id="applications">
+    <h2>Real-Life Applications</h2>
+
+    <div class="split">
+        <img src="application.png">
+
+        <div>
+            <p>
+            AI is used in healthcare, education, and transportation. It helps
+            doctors diagnose diseases, enables personalized learning, and
+            supports autonomous vehicles.
+            </p>
+
+            <p>
+            These applications demonstrate how AI is shaping the future and
+            improving quality of life.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- AI AROUND US -->
+<section class="section">
+    <h2>AI Around Us</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="home.png">
+            <p>Smart Homes</p>
+        </div>
+
+        <div class="card">
+            <img src="robot.png">
+            <p>Robotics</p>
+        </div>
+
+        <div class="card">
+            <img src="car.png">
+            <p>Self Driving Cars</p>
+        </div>
+        <div class="card">
+            <img src="health.png">
+            <p>AI in Healthcare</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p> 2026 AI Webpage: © Argho Bakshi</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(window).on('load', function(){
+    $(window).scrollTop(0);
+});
+</script>
+
+</body>
+</html>
